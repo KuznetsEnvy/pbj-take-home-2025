@@ -110,7 +110,7 @@
         "video": "shopify://files/videos/Clean_clothes_web_clip-opt.mp4",
         "video_url": "https://vimeo.com/160840280",
         "description": "",
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
