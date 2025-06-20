@@ -100,16 +100,15 @@
         "padding_bottom": 68
       }
     },
-    "video_bWg6tp": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
+    "video_pbj_XA8HDM": {
+      "type": "video_pbj",
+      "name": "t:sections.video_pbj.presets.name",
       "settings": {
-        "heading": "",
+        "heading": "Video",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video": "shopify://files/videos/Clean_clothes_web_clip-opt.mp4",
         "video_url": "https://vimeo.com/160840280",
-        "cover_image": "shopify://shop_images/Clean_clothes_web_clip-poster.jpg",
         "description": "",
         "full_width": false,
         "color_scheme": "",
@@ -121,6 +120,6 @@
   "order": [
     "main",
     "related-products",
-    "video_bWg6tp"
+    "video_pbj_XA8HDM"
   ]
 }
