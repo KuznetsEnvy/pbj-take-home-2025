@@ -3013,6 +3013,54 @@
         "name": "Video"
       }
     },
+    "video_pbj": {
+      "name": "Video pb+j",
+      "settings": {
+        "heading": {
+          "label": "Heading",
+          "default": "Video"
+        },
+        "cover_image": {
+          "label": "Cover image"
+        },
+        "video": {
+          "label": "Video"
+        },
+        "enable_video_looping": {
+          "label": "Loop video"
+        },
+        "header__1": {
+          "content": "Shopify-hosted video"
+        },
+        "header__2": {
+          "content": "Or embed video from URL"
+        },
+        "header__3": {
+          "content": "Layout"
+        },
+        "paragraph": {
+          "content": "Shows when no Shopify-hosted video is selected"
+        },
+        "video_url": {
+          "label": "URL",
+          "info": "Use a YouTube or Vimeo URL"
+        },
+        "description": {
+          "label": "Video alt text",
+          "info": "Describe the video for those using screen readers"
+        },
+        "image_padding": {
+          "label": "Add image padding",
+          "info": "Select image padding if you don't want your cover image to be cropped."
+        },
+        "full_width": {
+          "label": "Full width"
+        }
+      },
+      "presets": {
+        "name": "Video pb+j"
+      }
+    },
     "slideshow": {
       "name": "Slideshow",
       "settings": {
