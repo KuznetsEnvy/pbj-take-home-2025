@@ -18,8 +18,9 @@
 {%- liquid
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
-  assign alt = 'sections.video_pbj.load_video' | t: description: video_alt | escape
+  assign alt = 'sections.video.load_video' | t: description: video_alt | escape
   assign poster = section.settings.video.preview_image | default: section.settings.cover_image
+  assign poster_video = section.settings.cover_video
 
   if section.settings.video != null
     assign ratio_diff = section.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
@@ -54,7 +55,9 @@
     <deferred-media
       class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       data-media-id="{{ video_id }}"
-      {% if poster != null %}
+      {% if poster_video != null %}
+        style="--ratio-percent: {{ 1 | divided_by: poster_video.aspect_ratio | times: 100 }}%;"
+      {% elsif poster != null %}
         style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
       {% endif %}
     >
@@ -64,7 +67,12 @@
         type="button"
         aria-label="{{ alt }}"
       >
-        {%- if poster != null -%}
+        {%- if poster_video != null -%}
+          {{
+          poster_video
+          | video_tag: autoplay: true, loop: true, muted: true, controls: false
+          }}
+        {%- elsif poster != null -%}
           {{
             poster
             | image_url: width: 3840
@@ -73,7 +81,7 @@
         {%- else -%}
           {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
-        <span class="deferred-media__poster-button motion-reduce">
+        <span class="deferred-media__poster-button motion-reduce" data-label="{{ 'sections.video.watch' | t }}">
           <span class="svg-wrapper">
             {{- 'icon-play.svg' | inline_asset_content -}}
           </span>
