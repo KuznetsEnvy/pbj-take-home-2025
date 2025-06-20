@@ -3023,6 +3023,9 @@
         "cover_image": {
           "label": "Cover image"
         },
+        "cover_video": {
+          "label": "Or cover video"
+        },
         "video": {
           "label": "Video"
         },
