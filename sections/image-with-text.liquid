@@ -66,6 +66,8 @@
           >
             {%- for block in section.blocks -%}
               {% case block.type %}
+                {%- when 'content_icon' -%}
+                  {% render 'icon-pbj', icon: block.settings.icon_slug %}
                 {%- when 'heading' -%}
                   <h2
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"

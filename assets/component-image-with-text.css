@@ -92,6 +92,11 @@
   z-index: 1;
 }
 
+.image-with-text__content svg.icon {
+    height: 65px;
+    width: auto;
+}
+
 .image-with-text .grid__item::after {
   content: '';
   position: absolute;
