@@ -115,11 +115,51 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "image_with_text_FY46FE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9Y6Vbh": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Craft",
+            "heading_size": "h2"
+          }
+        },
+        "text_xxkY3b": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>100% natural pigments &/or mordants to dye fibers and garments</strong></p><p>The craft of naturally dyed textile production and pesticide-free cotton cultivation goes back thousands of years, with strong roots in the Indian subcontinent. The origins of vegetable dyeing in India can be traced to the Indus Valley around the 4th millenium B.C. Thousands of years later, the synthesis of petroleum-based dyes proliferated in the 1870’s, bringing an end to widespread use of natural processes.</p><p>Shortsightedly convenient and inexpensive GMO & pesticide heavy cotton, petroleum-based dyes, and exploited garment manufacturing labor, has largely replaced the sustainable craft of milled organic cotton, colored with natural dyes, cut and sewn into finished garments with integrity. This shift has spoiled the natural world for more than a century, causing drastic consequences to garment workers and our environment.</p><p>Through the Clean Clothes project, we aim to create dialogue and research for two primary goals: 1) to respect and advocate for the usage of pesticide-free, non-GMO organic cotton; and 2) if dyeing is necessary, to use only 100% natural dyes. By issuing constraints on dyeing and washing processes, not only can we assure Clean Clothes on our skin, but cleaner rivers, oceans, soil, and air for everyone.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9Y6Vbh",
+        "text_xxkY3b"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/0269e6af75c1--CLEAN-CREW-INDIGO-6-DETAIL-05-f6f889.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "video_pbj_XA8HDM"
+    "video_pbj_XA8HDM",
+    "image_with_text_FY46FE"
   ]
 }
