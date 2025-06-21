@@ -66,6 +66,8 @@
           >
             {%- for block in section.blocks -%}
               {% case block.type %}
+                {%- when 'content_icon' -%}
+                  {% render 'icon-pbj', icon: block.settings.icon_slug %}
                 {%- when 'heading' -%}
                   <h2
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
@@ -465,6 +467,24 @@
           "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
         }
       ]
+    },
+    {
+      "type": "content_icon",
+      "name": "t:sections.image-with-text.blocks.content_icon.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon_slug",
+          "label": "t:sections.image-with-text.blocks.content_icon.settings.icon_slug.label",
+          "options": [
+            { "value": "craft", "label": "t:sections.image-with-text.blocks.content_icon.settings.icon_slug.options__craft.label" },
+            { "value": "regions", "label": "t:sections.image-with-text.blocks.content_icon.settings.icon_slug.options__regions.label" },
+            { "value": "process", "label": "t:sections.image-with-text.blocks.content_icon.settings.icon_slug.options__process.label" },
+            { "value": "people", "label": "t:sections.image-with-text.blocks.content_icon.settings.icon_slug.options__people.label" }
+          ],
+          "default": "craft"
+        }
+      ] 
     }
   ],
   "presets": [
