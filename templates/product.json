@@ -119,6 +119,12 @@
     "image_with_text_FY46FE": {
       "type": "image-with-text",
       "blocks": {
+        "content_icon_imXkiX": {
+          "type": "content_icon",
+          "settings": {
+            "icon_slug": "craft"
+          }
+        },
         "heading_9Y6Vbh": {
           "type": "heading",
           "settings": {
@@ -135,6 +141,7 @@
         }
       },
       "block_order": [
+        "content_icon_imXkiX",
         "heading_9Y6Vbh",
         "text_xxkY3b"
       ],
