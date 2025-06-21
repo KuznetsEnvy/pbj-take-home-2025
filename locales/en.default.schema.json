@@ -1493,6 +1493,18 @@
               "label": "Outline style"
             }
           }
+        },
+        "content_icon": {
+          "name": "Icon",
+          "settings": {
+            "icon_slug": {
+              "label": "Icon",
+              "options__craft": { "label": "The craft" },
+              "options__regions": { "label": "The land" },
+              "options__process": { "label": "The process" },
+              "options__people": { "label": "The people" }
+            }
+          }
         }
       },
       "presets": {
