@@ -100,22 +100,6 @@
         "padding_bottom": 68
       }
     },
-    "video_pbj_XA8HDM": {
-      "type": "video_pbj",
-      "name": "t:sections.video_pbj.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://vimeo.com/160840280",
-        "cover_video": "shopify://files/videos/Clean_clothes_web_clip-opt.mp4",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "image_with_text_FY46FE": {
       "type": "image-with-text",
       "blocks": {
@@ -161,12 +145,75 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "video_pbj_XA8HDM": {
+      "type": "video_pbj",
+      "name": "t:sections.video_pbj.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://vimeo.com/160840280",
+        "cover_video": "shopify://files/videos/Clean_clothes_web_clip-opt.mp4",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_VitQPR": {
+      "type": "image-with-text",
+      "blocks": {
+        "content_icon_zLBqeX": {
+          "type": "content_icon",
+          "settings": {
+            "icon_slug": "regions"
+          }
+        },
+        "heading_NgNgbi": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Land",
+            "heading_size": "h2"
+          }
+        },
+        "text_dAngrx": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Home to indigo and the finest organic cotton</strong></p><p>The Indian subcontinent extends from the Himalayas in the North to the coastal plains of the South. This overwhelming diversity in climates, landscapes, and culture, has provided an extensive palate of vegetable and mineral pigments to Indian dye houses for thousands of years. The etymology of the word ‘indigo’, originates from the Ancient Greek ‘indikón’, meaning ‘Indian’, as the dye from the Indus Valley Civilization was traded with Ancient Greece.</p><p>Scientists believe that cotton was first cultivated in the Indus Delta, circa 6,000 B.C. India’s landscapes are highly conducive for cotton-growing, however only less than 1% of cotton grown is pesticide free and non GMO. This stark contrast has sparked all the more reason for the evolution of the Clean Clothes project, dedicated to the production of quality garments in a sustainable way.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "content_icon_zLBqeX",
+        "heading_NgNgbi",
+        "text_dAngrx"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/natural-indigo-india-process.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "related-products",
+    "image_with_text_FY46FE",
     "video_pbj_XA8HDM",
-    "image_with_text_FY46FE"
+    "image_with_text_VitQPR"
   ]
 }
