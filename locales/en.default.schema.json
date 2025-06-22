@@ -1351,6 +1351,9 @@
           "options__4": {
             "label": "Large"
           },
+          "original": {
+            "label": "Original aspect ratio"
+          },
           "label": "Height"
         },
         "desktop_image_width": {

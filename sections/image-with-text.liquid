@@ -12,6 +12,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {% if section.settings.meta_text != blank %}
+    .shopify-section-template--{{ section.id }} .image-with-text__media-item {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  {% endif %}
 {%- endstyle -%}
 
 {%- liquid
@@ -141,6 +148,10 @@
         {
           "value": "large",
           "label": "t:sections.image-with-text.settings.height.options__4.label"
+        },
+        {
+          "value": "original",
+          "label": "t:sections.image-with-text.settings.height.original.label"
         }
       ],
       "default": "adapt",

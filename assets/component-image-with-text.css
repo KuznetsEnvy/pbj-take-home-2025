@@ -17,6 +17,11 @@
   overflow: visible;
 }
 
+.image-with-text__media--original.media > img {
+  object-fit: contain;
+  object-position: top center;
+}
+
 .image-with-text__media--small {
   height: 19.4rem;
 }
