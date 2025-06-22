@@ -253,6 +253,51 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "image_with_text_BiTYPk": {
+      "type": "image-with-text",
+      "blocks": {
+        "content_icon_TfffnH": {
+          "type": "content_icon",
+          "settings": {
+            "icon_slug": "people"
+          }
+        },
+        "heading_nbNrwA": {
+          "type": "heading",
+          "settings": {
+            "heading": "The People",
+            "heading_size": "h2"
+          }
+        },
+        "text_F3KHrx": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Those who understand the benefits of cultivating organic cotton & natural dyes</strong></p><p>An early visit to a small team with specialized knowledge of natural fermented indigo dyeing has evolved into the IOAN Clean Clothes Project - the pursuit of a clean and fair production loop, with people at its core. At the dye house each day, the team ritualistically takes the time to remove their shoes before entering the workplace and regularly sit down for a mid-day tea between duties.</p><p>IOAN Clean Clothes are sourced exclusively from farmers and mills who understand the economic, social, and environmental benefits of cultivating organic cotton, natural dye houses with thousands of years worth of knowledge, and pattern cutters and seamstresses who take pride in their work. For the women and men we work with, it’s simply honest work - a way to produce quality goods without negatively impacting themselves or their local ecosystems.</p><p>The local team continues to expand their knowledge and operations, with the goal of passing on these sustainable cultural practices to future generations. Throughout the years, the IOAN network of dye houses has grown to four members, as demand for their work sustainably grows.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "content_icon_TfffnH",
+        "heading_nbNrwA",
+        "text_F3KHrx"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -261,6 +306,7 @@
     "image_with_text_FY46FE",
     "video_pbj_XA8HDM",
     "image_with_text_VitQPR",
-    "image_with_text_qKFkXM"
+    "image_with_text_qKFkXM",
+    "image_with_text_BiTYPk"
   ]
 }
