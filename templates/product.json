@@ -207,6 +207,52 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "image_with_text_qKFkXM": {
+      "type": "image-with-text",
+      "blocks": {
+        "content_icon_grdyXK": {
+          "type": "content_icon",
+          "settings": {
+            "icon_slug": "process"
+          }
+        },
+        "heading_q6BATy": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Process",
+            "heading_size": "h2"
+          }
+        },
+        "text_67CkJa": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Going back to nature</strong></p><p>Wearing vibrant colors should not come at the cost of contaminating our natural resources. This project not only eliminates petrochemical dyes, but also genetically modified and corporation-patented seeds in the cotton farming process. 100% natural dyes, water and a biodegradable enzyme wash are used for the dyeing and finishing of IOAN organic cotton products. Some of our natural dye forays include:</p><ul><li>Acacia arabica: tree bark-rust/brown tones</li><li>Terminalia chebula: seeds-yellow tones</li><li>Rubia cordifolia: twigs-red tones</li><li>Iron vinegar: iron scraps + palm sugar for black & grey tones</li><li>Shellac sticklac: insect resin-pink & burgundy tones</li><li>Indigofera tinctoria: indigo leaves-blue tones. Specialized in the art of natural indigo, our dyemasters cultivate regenerative vats. The indigo solution maintained in fermentation can extend its life to decades, keeping the natural indigo richness intact, eliminating waste water and mordants during the dyeing process. Indian natural dyers use myrobalan, tannins, and wood ash as mordants for all other colors.</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "content_icon_grdyXK",
+        "heading_q6BATy",
+        "text_67CkJa"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/natural-indigo-india-people.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -214,6 +260,7 @@
     "related-products",
     "image_with_text_FY46FE",
     "video_pbj_XA8HDM",
-    "image_with_text_VitQPR"
+    "image_with_text_VitQPR",
+    "image_with_text_qKFkXM"
   ]
 }
