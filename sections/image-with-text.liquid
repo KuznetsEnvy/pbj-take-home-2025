@@ -14,7 +14,7 @@
   }
 
   {% if section.settings.meta_text != blank %}
-    .shopify-section-template--{{ section.id }} .image-with-text__media-item {
+    .section-{{ section.id }}-padding .image-with-text__media-item {
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -65,6 +65,11 @@
               {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
           </div>
+          {% if section.settings.meta_text != blank %}
+            <div class="image-with-text__meta-text">
+              {{ section.settings.meta_text }}
+            </div>
+          {% endif %}
         </div>
         <div class="image-with-text__text-item grid__item">
           <div
@@ -212,6 +217,11 @@
       ],
       "default": "none",
       "label": "t:sections.all.animation.image_behavior.label"
+    },
+    {
+      "type": "richtext",
+      "id": "meta_text",
+      "label": "t:sections.image-with-text.settings.meta_text.label"
     },
     {
       "type": "header",

@@ -17,9 +17,14 @@
   overflow: visible;
 }
 
+.image-with-text__media--original.media {
+  min-height: unset;
+}
+
 .image-with-text__media--original.media > img {
   object-fit: contain;
   object-position: top center;
+  position: relative !important;
 }
 
 .image-with-text__media--small {
@@ -423,5 +428,16 @@
 @media screen and (min-width: 750px) {
   .multirow__inner {
     row-gap: var(--grid-desktop-vertical-spacing);
+  }
+}
+
+.image-with-text__meta-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .image-with-text__meta-text ul {
+    columns: 2;
   }
 }
