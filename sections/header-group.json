@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_PF6cPQ": {
+          "type": "announcement",
+          "settings": {
+            "text": "Made at the source | Non-toxic clothes",
+            "link": "/collections/all"
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -23,6 +30,7 @@
         }
       },
       "block_order": [
+        "announcement_PF6cPQ",
         "announcement-bar-0"
       ],
       "settings": {
