@@ -26,6 +26,17 @@
           "type": "price",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_details_kHUCG8": {
+          "type": "variant_details",
+          "settings": {
+            "heading": "Details",
+            "icon": "washing"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -44,10 +55,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -59,10 +66,11 @@
         "title",
         "variant_subtitle_chmUMk",
         "price",
+        "description",
+        "variant_details_kHUCG8",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "share"
       ],
       "settings": {
