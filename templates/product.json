@@ -12,16 +12,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
+        },
+        "variant_subtitle_chmUMk": {
+          "type": "variant_subtitle",
+          "settings": {
+            "text_style": "body"
+          }
         },
         "price": {
           "type": "price",
@@ -57,8 +56,8 @@
         }
       },
       "block_order": [
-        "text",
         "title",
+        "variant_subtitle_chmUMk",
         "price",
         "variant_picker",
         "quantity_selector",
