@@ -180,6 +180,7 @@ if (!customElements.get('product-info')) {
           
           this.updateVariantSubtitle(html);
           this.updateProductDescription(html);
+          this.updateVariantDetails(html);
           
           const updateSourceFromDestination = (id, shouldHide = (source) => false) => {
             const source = html.getElementById(`${id}-${this.sectionId}`);
@@ -339,7 +340,27 @@ if (!customElements.get('product-info')) {
           HTMLUpdateUtility.viewTransition(this.productDescription, productDescription);
         }
       }
-      
+
+      updateVariantDetails(html) {
+        /** Always present in HTML */
+        const variantDetails = html.querySelector('.variant_details');
+        /** Might be empty if newly selected variant has no metafield value */
+        const variantDetailsContent = html.querySelector('.variant_details .accordion__content .metafield-rich_text_field');
+        if (variantDetailsContent) {
+          if (this.variantDetailsContent) {
+            /* If both old and new variants have variant details, replace only content. */
+            HTMLUpdateUtility.viewTransition(this.variantDetailsContent, variantDetailsContent);
+          } else {
+            /* If old variant details is empty – replace the whole element, with parent etc. */
+            HTMLUpdateUtility.viewTransition(this.variantDetails, variantDetails);
+          }
+        } else {
+          /* If new variant's details are empty – replace with empty div. */
+          HTMLUpdateUtility.viewTransition(this.variantDetails, variantDetails);
+        }
+      }
+
+
       setQuantityBoundries() {
         const data = {
           cartQuantity: this.quantityInput.dataset.cartQuantity ? parseInt(this.quantityInput.dataset.cartQuantity) : 0,
@@ -428,6 +449,14 @@ if (!customElements.get('product-info')) {
 
       get productDescription() {
         return this.querySelector('.product__description');
+      }
+
+      get variantDetails() {
+        return this.querySelector('.variant_details');
+      }
+      
+      get variantDetailsContent() {
+        return this.querySelector('.variant_details .accordion__content .metafield-rich_text_field');
       }
 
       get relatedProducts() {

@@ -1986,7 +1986,6 @@
             "paragraph": {
               "content": "When this block is added, it shows value of Variant metafield called 'Variant subtitle'."
             }
-            
           }
         },
         "title": {
@@ -2240,6 +2239,18 @@
               "options__44": {
                 "label": "Washing"
               }
+            }
+          }
+        },
+        "variant_details": {
+          "name": "Variant details",
+          "settings": {
+            "paragraph": {
+              "content": "When this block is added, it shows value of Variant metafield called 'Variant details'."
+            },
+            "heading": {
+              "label": "Heading",
+              "default": "Details"
             }
           }
         },
