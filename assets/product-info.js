@@ -179,6 +179,7 @@ if (!customElements.get('product-info')) {
           this.updateMedia(html, variant?.featured_media?.id);
           
           this.updateVariantSubtitle(html);
+          this.updateProductDescription(html);
           
           const updateSourceFromDestination = (id, shouldHide = (source) => false) => {
             const source = html.getElementById(`${id}-${this.sectionId}`);
@@ -325,6 +326,19 @@ if (!customElements.get('product-info')) {
           HTMLUpdateUtility.viewTransition(this.variantSubtitle, variantSubtitle);
         }
       }
+
+      
+      /**
+       * Updates the product description based on the selected variant.
+       * This function is not part of the original Dawn theme and was added as a custom modification.
+       * @param {HTMLDocument} html - The HTML document containing the new product description
+       */
+      updateProductDescription(html) {
+        const productDescription = html.querySelector('.product__description');
+        if (productDescription) {
+          HTMLUpdateUtility.viewTransition(this.productDescription, productDescription);
+        }
+      }
       
       setQuantityBoundries() {
         const data = {
@@ -410,6 +424,10 @@ if (!customElements.get('product-info')) {
       
       get variantSubtitle() {
         return this.querySelector('.variant_subtitle');
+      }
+
+      get productDescription() {
+        return this.querySelector('.product__description');
       }
 
       get relatedProducts() {

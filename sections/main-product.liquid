@@ -204,9 +204,26 @@
                   {%- endif -%}
                 </p>
               {%- when 'description' -%}
-                {%- if product.description != blank -%}
+                {%- liquid
+                  assign has_product_description = false
+                  if product.description != blank
+                    assign has_product_description = true
+                  endif
+                  
+                  assign has_variant_description = false
+                  if product.selected_or_first_available_variant.metafields.custom.variant_description.value != blank
+                    assign has_variant_description = true
+                  endif
+                -%}
+                {%- if has_variant_description or has_product_description -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {{ product.description }}
+                    {%- if has_variant_description -%}
+                      <span class="variant_description_follows"></span>
+                      {{ product.selected_or_first_available_variant.metafields.custom.variant_description | metafield_tag }}
+                    {%- else -%}
+                      <span class="product_description_follows"></span>
+                      {{ product.description }}
+                    {%- endif -%}
                   </div>
                 {%- endif -%}
               {%- when 'sku' -%}
