@@ -1980,6 +1980,15 @@
             }
           }
         },
+        "variant_subtitle": {
+          "name": "Variant subtitle",
+          "settings": {
+            "paragraph": {
+              "content": "When this block is added, it shows value of Variant metafield called 'Variant subtitle'."
+            }
+            
+          }
+        },
         "title": {
           "name": "Title"
         },

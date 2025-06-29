@@ -163,6 +163,7 @@ if (!customElements.get('product-info')) {
 
       handleUpdateProductInfo(productUrl) {
         return (html) => {
+          // debugger;
           const variant = this.getSelectedVariant(html);
 
           this.pickupAvailability?.update(variant);
@@ -174,9 +175,11 @@ if (!customElements.get('product-info')) {
             this.setUnavailable();
             return;
           }
-
+          
           this.updateMedia(html, variant?.featured_media?.id);
-
+          
+          this.updateVariantSubtitle(html);
+          
           const updateSourceFromDestination = (id, shouldHide = (source) => false) => {
             const source = html.getElementById(`${id}-${this.sectionId}`);
             const destination = this.querySelector(`#${id}-${this.dataset.section}`);
@@ -310,6 +313,19 @@ if (!customElements.get('product-info')) {
         if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
       }
 
+      
+      /**
+       * Custom function added to handle variant subtitle updates.
+       * This function is not part of the original Dawn theme and was added as a customization.
+       * @param {HTMLDocument} html - The HTML document containing the new variant subtitle
+       */
+      updateVariantSubtitle(html) {
+        const variantSubtitle = html.querySelector('.variant_subtitle');
+        if (variantSubtitle) {
+          HTMLUpdateUtility.viewTransition(this.variantSubtitle, variantSubtitle);
+        }
+      }
+      
       setQuantityBoundries() {
         const data = {
           cartQuantity: this.quantityInput.dataset.cartQuantity ? parseInt(this.quantityInput.dataset.cartQuantity) : 0,
@@ -390,6 +406,10 @@ if (!customElements.get('product-info')) {
 
       get variantSelectors() {
         return this.querySelector('variant-selects');
+      }
+      
+      get variantSubtitle() {
+        return this.querySelector('.variant_subtitle');
       }
 
       get relatedProducts() {

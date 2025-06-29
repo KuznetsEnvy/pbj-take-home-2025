@@ -96,6 +96,18 @@
                 >
                   {{- block.settings.text -}}
                 </p>
+              {%- when 'variant_subtitle' -%}
+                {% comment %} 'variant_subtitle' block copied from 'text' block, just changed the content {% endcomment %}
+                {%- if product.selected_or_first_available_variant.metafields.custom.variant_subtitle.value != blank -%}
+                  <p
+                      class="variant_subtitle product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                      {{ block.shopify_attributes }}
+                  >
+                    {{- product.selected_or_first_available_variant.metafields.custom.variant_subtitle.value -}}
+                  </p>
+                {%- else -%}
+                  <div class="variant_subtitle_metafield_is_empty"></div>
+                {%- endif -%}
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
@@ -742,6 +754,36 @@
           "id": "text",
           "default": "t:sections.main-product.blocks.text.settings.text.default",
           "label": "t:sections.main-product.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__2.label"
+            },
+            {
+              "value": "uppercase",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__3.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "variant_subtitle",
+      "name": "t:sections.main-product.blocks.variant_subtitle.name",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.variant_subtitle.settings.paragraph.content"
         },
         {
           "type": "select",
