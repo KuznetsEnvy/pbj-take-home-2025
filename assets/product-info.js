@@ -163,7 +163,6 @@ if (!customElements.get('product-info')) {
 
       handleUpdateProductInfo(productUrl) {
         return (html) => {
-          // debugger;
           const variant = this.getSelectedVariant(html);
 
           this.pickupAvailability?.update(variant);
@@ -330,7 +329,7 @@ if (!customElements.get('product-info')) {
        * 4. Applying the same filtering to both gallery and modal views
        */
       updateMediaGrouping() {
-        const mediaGallery = this.querySelector('media-gallery ul');
+        const mediaGallery = this.querySelector('media-gallery');
         if (!mediaGallery) return;
 
         const groupVariants = mediaGallery.getAttribute('data-group-variants');
@@ -353,7 +352,9 @@ if (!customElements.get('product-info')) {
         };
 
         // Update media gallery
-        mediaGallery.querySelectorAll('.product__media-item, .thumbnail-list__item').forEach(updateVisibility);
+        mediaGallery.querySelectorAll('.product__media-item').forEach(updateVisibility);
+        // Update thumbnails
+        mediaGallery.querySelectorAll('.thumbnail-list__item').forEach(updateVisibility);
 
         // Update modal content if it exists
         const modalContent = this.productModal?.querySelector('.product-media-modal__content');
