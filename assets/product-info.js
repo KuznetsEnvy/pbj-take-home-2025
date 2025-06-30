@@ -175,13 +175,13 @@ if (!customElements.get('product-info')) {
             this.setUnavailable();
             return;
           }
-          
+
           this.updateMedia(html, variant?.featured_media?.id);
-          
+
           this.updateVariantSubtitle(html);
           this.updateProductDescription(html);
           this.updateVariantDetails(html);
-          
+
           const updateSourceFromDestination = (id, shouldHide = (source) => false) => {
             const source = html.getElementById(`${id}-${this.sectionId}`);
             const destination = this.querySelector(`#${id}-${this.dataset.section}`);
@@ -315,7 +315,7 @@ if (!customElements.get('product-info')) {
         if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
       }
 
-      
+
       /**
        * Custom function added to handle variant subtitle updates.
        * This function is not part of the original Dawn theme and was added as a customization.
@@ -328,7 +328,7 @@ if (!customElements.get('product-info')) {
         }
       }
 
-      
+
       /**
        * Updates the product description based on the selected variant.
        * This function is not part of the original Dawn theme and was added as a custom modification.
@@ -442,7 +442,7 @@ if (!customElements.get('product-info')) {
       get variantSelectors() {
         return this.querySelector('variant-selects');
       }
-      
+
       get variantSubtitle() {
         return this.querySelector('.variant_subtitle');
       }
@@ -454,7 +454,7 @@ if (!customElements.get('product-info')) {
       get variantDetails() {
         return this.querySelector('.variant_details');
       }
-      
+
       get variantDetailsContent() {
         return this.querySelector('.variant_details .accordion__content .metafield-rich_text_field');
       }
