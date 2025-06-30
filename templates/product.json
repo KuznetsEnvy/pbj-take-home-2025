@@ -167,13 +167,33 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
+        "video_url": "https://vimeo.com/581922813",
+        "cover_video": "shopify://files/videos/Undyed_Web_Clip.mp4",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_for_natural_color": true,
+        "show_for_dyed_items": false
+      }
+    },
+    "video_pbj_caa34Q": {
+      "type": "video_pbj",
+      "name": "t:sections.video_pbj.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
         "video_url": "https://vimeo.com/160840280",
         "cover_video": "shopify://files/videos/Clean_clothes_web_clip-opt.mp4",
         "description": "",
         "full_width": true,
         "color_scheme": "",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "show_for_natural_color": false,
+        "show_for_dyed_items": true
       }
     },
     "image_with_text_VitQPR": {
@@ -493,6 +513,7 @@
     "related-products",
     "image_with_text_FY46FE",
     "video_pbj_XA8HDM",
+    "video_pbj_caa34Q",
     "image_with_text_VitQPR",
     "image_with_text_ENHgEn",
     "image_with_text_qKFkXM",
