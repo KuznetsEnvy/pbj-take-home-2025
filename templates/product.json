@@ -195,7 +195,7 @@
         "text_dAngrx": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Home to indigo and the finest organic cotton</strong></p><p>The Indian subcontinent extends from the Himalayas in the North to the coastal plains of the South. This overwhelming diversity in climates, landscapes, and culture, has provided an extensive palate of vegetable and mineral pigments to Indian dye houses for thousands of years. The etymology of the word ‘indigo’, originates from the Ancient Greek ‘indikón’, meaning ‘Indian’, as the dye from the Indus Valley Civilization was traded with Ancient Greece.</p><p>Scientists believe that cotton was first cultivated in the Indus Delta, circa 6,000 B.C. India’s landscapes are highly conducive for cotton-growing, however only less than 1% of cotton grown is pesticide free and non GMO. This stark contrast has sparked all the more reason for the evolution of the Clean Clothes project, dedicated to the production of quality garments in a sustainable way.</p>",
+            "text": "<p><strong>Home to the world's finest organic cotton</strong></p><p>The Indian subcontinent extends from the Himalayas in the North to the coastal plains of the South. Scientists believe that cotton was first cultivated in the Indus Delta, circa 6,000 B.C. India’s landscapes are highly conducive for cotton-growing, however only less than 1% of cotton grown is pesticide free and non GMO. This stark contrast has sparked all the more reason for the evolution of the Clean Clothes project, dedicated to the production of quality garments in a sustainable way. Farming cotton requires significant amounts of water. Toxic runoff from synthetic fertilizers and pesticides have catastrophically polluted water systems in India for decades. Organic cotton crops retain water more efficiently due to organic matter in the soil and most importantly filter and cycle precious resources. This is extremely important for certain regions of India, where there is a severe scarcity of water.</p>",
             "text_style": "body"
           }
         }
@@ -204,6 +204,55 @@
         "content_icon_zLBqeX",
         "heading_NgNgbi",
         "text_dAngrx"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Undyed-Organic-Cotton-The-Land2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "meta_text": "",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "show_for_natural_color": true,
+        "show_for_dyed_items": false
+      }
+    },
+    "image_with_text_ENHgEn": {
+      "type": "image-with-text",
+      "blocks": {
+        "content_icon_HJNdgC": {
+          "type": "content_icon",
+          "settings": {
+            "icon_slug": "regions"
+          }
+        },
+        "heading_c8yPLF": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Land",
+            "heading_size": "h2"
+          }
+        },
+        "text_D8PMqw": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Home to indigo and the finest organic cotton</strong></p><p>The Indian subcontinent extends from the Himalayas in the North to the coastal plains of the South. This overwhelming diversity in climates, landscapes, and culture, has provided an extensive palate of vegetable and mineral pigments to Indian dye houses for thousands of years. The etymology of the word ‘indigo’, originates from the Ancient Greek ‘indikón’, meaning ‘Indian’, as the dye from the Indus Valley Civilization was traded with Ancient Greece.</p><p>Scientists believe that cotton was first cultivated in the Indus Delta, circa 6,000 B.C. India’s landscapes are highly conducive for cotton-growing, however only less than 1% of cotton grown is pesticide free and non GMO. This stark contrast has sparked all the more reason for the evolution of the Clean Clothes project, dedicated to the production of quality garments in a sustainable way.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "content_icon_HJNdgC",
+        "heading_c8yPLF",
+        "text_D8PMqw"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -221,7 +270,7 @@
         "color_scheme": "scheme-2",
         "padding_top": 20,
         "padding_bottom": 0,
-        "show_for_natural_color": true,
+        "show_for_natural_color": false,
         "show_for_dyed_items": true
       }
     },
@@ -445,6 +494,7 @@
     "image_with_text_FY46FE",
     "video_pbj_XA8HDM",
     "image_with_text_VitQPR",
+    "image_with_text_ENHgEn",
     "image_with_text_qKFkXM",
     "image_with_text_Nz7Qi8",
     "image_with_text_BiTYPk",
