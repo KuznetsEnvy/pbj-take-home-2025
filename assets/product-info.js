@@ -177,6 +177,8 @@ if (!customElements.get('product-info')) {
           }
 
           this.updateMedia(html, variant?.featured_media?.id);
+          
+          this.updateMediaGrouping();
 
           this.updateVariantSubtitle(html);
           this.updateProductDescription(html);
@@ -315,6 +317,50 @@ if (!customElements.get('product-info')) {
         if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
       }
 
+      
+      /**
+       * Custom function that filters product gallery images based on variant grouping.
+       * This function is not part of the original Dawn theme and was added as a customization
+       * to support variant-specific image filtering in the product gallery.
+       *
+       * It works by:
+       * 1. Checking if variant grouping is enabled through data attributes
+       * 2. Finding the currently active media item and its variant grouping
+       * 3. Showing/hiding images based on whether they match the active variant grouping
+       * 4. Applying the same filtering to both gallery and modal views
+       */
+      updateMediaGrouping() {
+        const mediaGallery = this.querySelector('media-gallery ul');
+        if (!mediaGallery) return;
+
+        const groupVariants = mediaGallery.getAttribute('data-group-variants');
+        const hasOnlyDefaultVariant = mediaGallery.getAttribute('data-has-only-default-variant');
+        const disableImageGrouping = mediaGallery.getAttribute('data-disable-image-grouping');
+
+        if (groupVariants === 'false' || hasOnlyDefaultVariant === 'true' || disableImageGrouping === 'true') return;
+
+        const featuredMedia = mediaGallery.querySelector('.product__media-item.is-active');
+        const featuredVariantGrouping = featuredMedia ? featuredMedia.getAttribute('data-variant-grouping') : null;
+
+        // Function to update visibility based on variant grouping
+        const updateVisibility = (mediaItem) => {
+          const mediaVariantGrouping = mediaItem.getAttribute('data-variant-grouping');
+          if (mediaVariantGrouping !== featuredVariantGrouping || mediaVariantGrouping === '') {
+            mediaItem.classList.add('hide-image');
+          } else {
+            mediaItem.classList.remove('hide-image');
+          }
+        };
+
+        // Update media gallery
+        mediaGallery.querySelectorAll('.product__media-item, .thumbnail-list__item').forEach(updateVisibility);
+
+        // Update modal content if it exists
+        const modalContent = this.productModal?.querySelector('.product-media-modal__content');
+        if (modalContent) {
+          modalContent.querySelectorAll('.product-modal-image').forEach(updateVisibility);
+        }
+      }
 
       /**
        * Custom function added to handle variant subtitle updates.
