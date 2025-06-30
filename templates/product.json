@@ -95,6 +95,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like…",
         "heading_size": "h2",
@@ -140,6 +141,7 @@
         "heading_9Y6Vbh",
         "text_xxkY3b"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/0269e6af75c1--CLEAN-CREW-INDIGO-6-DETAIL-05-f6f889.jpg",
