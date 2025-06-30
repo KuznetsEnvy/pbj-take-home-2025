@@ -24,13 +24,13 @@ To be used within the opening tag
 
 
       if section.settings.show_for_natural_color == false
-        assign pdp_hide_on_selected_color_atts = pdp_hide_on_selected_color_atts | append: ' data-js-hide-for-natural-color'
+        assign pdp_hide_on_selected_color_atts = pdp_hide_on_selected_color_atts | append: ' js-hide-for-natural-color'
         if is_natural
           assign pdp_hide_on_selected_color_atts = pdp_hide_on_selected_color_atts | append: ' hidden'
         endif
       endif
       if section.settings.show_for_dyed_items == false
-        assign pdp_hide_on_selected_color_atts = pdp_hide_on_selected_color_atts | append: ' data-js-hide-for-dyed-items'
+        assign pdp_hide_on_selected_color_atts = pdp_hide_on_selected_color_atts | append: ' js-hide-for-dyed-items'
         unless is_natural
           assign pdp_hide_on_selected_color_atts = pdp_hide_on_selected_color_atts | append: ' hidden'
         endunless

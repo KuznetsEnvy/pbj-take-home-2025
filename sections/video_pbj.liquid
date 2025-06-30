@@ -39,9 +39,9 @@
   {%- endif %}
 {%- endcapture -%}
 
-{% capture pdp_visibility_atts %}{% render 'pdp-visibility-atts' %}{% endcapture %}
+{% capture pdp_visibility_class %}{% render 'pdp-visibility-class' %}{% endcapture %}
 
-<div class="color-{{ section.settings.color_scheme }} gradient" {{ pdp_visibility_atts | strip }}>
+<div class="color-{{ section.settings.color_scheme }} gradient {{ pdp_visibility_class | strip }}">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div
       {% if section.settings.full_width %}
