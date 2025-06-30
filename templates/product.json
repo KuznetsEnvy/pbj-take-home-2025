@@ -529,6 +529,85 @@
         "show_for_natural_color": false,
         "show_for_dyed_items": true
       }
+    },
+    "multicolumn_QqU3Uj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_g4NfPe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Image_from_iOS.jpg",
+            "title": "",
+            "text": "<p>Re-invigorating, re-introducing local ancestral techniques, adapting to modern need.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HQbKdr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_made-at-the-source.png",
+            "title": "",
+            "text": "<p>From the ground to the finished product, made at the source of the raw materials.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iKa3Nb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_enviromentally-safe.png",
+            "title": "",
+            "text": "<p>Organic, recycled or biodegradable materials and processes.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3mHJDx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_fair-wages.png",
+            "title": "",
+            "text": "<p>Worldwide team members and partners receive more than average wages and salaries.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zGnbHR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_face-to-face.png",
+            "title": "",
+            "text": "<p>No intermediaries or agents, every production is developed and monitored by IOAN.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_g4NfPe",
+        "column_HQbKdr",
+        "column_iKa3Nb",
+        "column_3mHJDx",
+        "column_zGnbHR"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -544,6 +623,7 @@
     "image_with_text_BiTYPk",
     "image_with_text_CyiHaN",
     "image_banner_EYTm7m",
-    "image_banner_N4jE3w"
+    "image_banner_N4jE3w",
+    "multicolumn_QqU3Uj"
   ]
 }
