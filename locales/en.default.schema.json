@@ -446,6 +446,12 @@
           "label": "Round"
         },
         "label": "Image shape"
+      },
+      "visibility": {
+        "header": "Visibility",
+        "content": "When this section is used on product pages, we may optionally show it only when a product of the following type is selected",
+        "natural_color": "Natural color",
+        "dyed_items": "Dyed"
       }
     },
     "announcement-bar": {

@@ -182,6 +182,8 @@ if (!customElements.get('product-info')) {
           this.updateVariantSubtitle(html);
           this.updateProductDescription(html);
           this.updateVariantDetails(html);
+          
+          this.updateProductPageVisibility(variant);
 
           const updateSourceFromDestination = (id, shouldHide = (source) => false) => {
             const source = html.getElementById(`${id}-${this.sectionId}`);
@@ -406,7 +408,18 @@ if (!customElements.get('product-info')) {
           HTMLUpdateUtility.viewTransition(this.variantDetails, variantDetails);
         }
       }
-
+      
+      updateProductPageVisibility(variant) {
+        /** If this equals `false`, the product either is dyed – or has no color option. */
+        const is_natural = variant.title.toLowerCase().includes('undyed');
+        if (is_natural) {
+          document.querySelectorAll('[data-js-hide-for-natural-color]').forEach((el) => el.toggleAttribute('hidden', true));
+          document.querySelectorAll('[data-js-hide-for-dyed-items]').forEach((el) => el.toggleAttribute('hidden', false));
+        } else {
+          document.querySelectorAll('[data-js-hide-for-natural-color]').forEach((el) => el.toggleAttribute('hidden', false));
+          document.querySelectorAll('[data-js-hide-for-dyed-items]').forEach((el) => el.toggleAttribute('hidden', true));
+        }
+      }
 
       setQuantityBoundries() {
         const data = {

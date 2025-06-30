@@ -31,7 +31,9 @@
   endif
 -%}
 
-<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+{% capture pdp_visibility_atts %}{% render 'pdp-visibility-atts' %}{% endcapture %}
+
+<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}" {{ pdp_visibility_atts | strip }}>
   <div class="page-width">
     <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div class="image-with-text__grid grid grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
@@ -342,6 +344,26 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.visibility.header"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.all.visibility.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_for_natural_color",
+      "default": true,
+      "label": "t:sections.all.visibility.natural_color"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_for_dyed_items",
+      "default": true,
+      "label": "t:sections.all.visibility.dyed_items"
     }
   ],
   "blocks": [
