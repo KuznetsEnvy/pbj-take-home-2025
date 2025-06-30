@@ -496,6 +496,25 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "image": "shopify://shop_images/Undyed-Organic-Cotton-The_Land3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false,
+        "show_for_natural_color": true,
+        "show_for_dyed_items": false
+      }
+    },
+    "image_banner_N4jE3w": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
         "image": "shopify://shop_images/natural-indigo-india-land.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
@@ -506,7 +525,9 @@
         "color_scheme": "",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
-        "show_text_below": false
+        "show_text_below": false,
+        "show_for_natural_color": false,
+        "show_for_dyed_items": true
       }
     }
   },
@@ -522,6 +543,7 @@
     "image_with_text_Nz7Qi8",
     "image_with_text_BiTYPk",
     "image_with_text_CyiHaN",
-    "image_banner_EYTm7m"
+    "image_banner_EYTm7m",
+    "image_banner_N4jE3w"
   ]
 }
