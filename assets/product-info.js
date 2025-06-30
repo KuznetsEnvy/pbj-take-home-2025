@@ -419,6 +419,12 @@ if (!customElements.get('product-info')) {
           document.querySelectorAll('.js-hide-for-natural-color').forEach((el) => el.classList.toggle('hidden', false));
           document.querySelectorAll('.js-hide-for-dyed-items').forEach((el) => el.classList.toggle('hidden', true));
         }
+        
+        document.querySelectorAll('.poster_video').forEach((poster) => {
+          if (!poster.closest('.hidden')) {
+            poster.play();
+          }
+        });
       }
 
       setQuantityBoundries() {
