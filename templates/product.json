@@ -287,7 +287,7 @@
         "text_F3KHrx": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Those who understand the benefits of cultivating organic cotton & natural dyes</strong></p><p>An early visit to a small team with specialized knowledge of natural fermented indigo dyeing has evolved into the IOAN Clean Clothes Project - the pursuit of a clean and fair production loop, with people at its core. At the dye house each day, the team ritualistically takes the time to remove their shoes before entering the workplace and regularly sit down for a mid-day tea between duties.</p><p>IOAN Clean Clothes are sourced exclusively from farmers and mills who understand the economic, social, and environmental benefits of cultivating organic cotton, natural dye houses with thousands of years worth of knowledge, and pattern cutters and seamstresses who take pride in their work. For the women and men we work with, it’s simply honest work - a way to produce quality goods without negatively impacting themselves or their local ecosystems.</p><p>The local team continues to expand their knowledge and operations, with the goal of passing on these sustainable cultural practices to future generations. Throughout the years, the IOAN network of dye houses has grown to four members, as demand for their work sustainably grows.</p>",
+            "text": "<p><strong>From the land to the finished product</strong></p><p>Organic cotton farmers reject the use of synthetic pesticides, fertilizers and the use of GMO seeds. They are a deeply entrenched cultural cornerstone in the history of India. This vast community of growers on the Indian Peninsula produce a majority of the global organic cotton supply. Women and men work alongside in a diverse series of settings, from the organic cotton fields in central India, to yarn spinning, fabric looming and clothes making in urban environments... Together creating a network of like minded people where each unit or team brings the elements needed to achieve the most perfect organic cotton garment.</p>",
             "text_style": "body"
           }
         }
@@ -304,7 +304,7 @@
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
-        "meta_text": "<p><strong>From the land to the finished product, all within a perfect environment, working to bring production back to the original makers.</strong></p><ul><li>Raw Material: India</li><li>Processing: India</li><li>Cut And Sew: India</li><li>Labels: India</li><li>Hang Tag: India</li><li>Packaging: India</li></ul>",
+        "meta_text": "<p>From the land to the finished product<br/></p><ul><li>Raw Material: India</li><li>Processing: India</li><li>Cut And Sew: India</li><li>Labels: India</li><li>Hang Tag: India</li><li>Packaging: India</li></ul>",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
@@ -313,6 +313,53 @@
         "color_scheme": "scheme-2",
         "padding_top": 0,
         "padding_bottom": 20
+      }
+    },
+    "image_with_text_CyiHaN": {
+      "type": "image-with-text",
+      "blocks": {
+        "content_icon_digijY": {
+          "type": "content_icon",
+          "settings": {
+            "icon_slug": "people"
+          }
+        },
+        "heading_aHKggw": {
+          "type": "heading",
+          "settings": {
+            "heading": "The People",
+            "heading_size": "h2"
+          }
+        },
+        "text_yETyz6": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Those who understand the benefits of cultivating organic cotton & natural dyes</strong></p><p>An early visit to a small team with specialized knowledge of natural fermented indigo dyeing has evolved into the IOAN Clean Clothes Project - the pursuit of a clean and fair production loop, with people at its core. At the dye house each day, the team ritualistically takes the time to remove their shoes before entering the workplace and regularly sit down for a mid-day tea between duties.</p><p>IOAN Clean Clothes are sourced exclusively from farmers and mills who understand the economic, social, and environmental benefits of cultivating organic cotton, natural dye houses with thousands of years worth of knowledge, and pattern cutters and seamstresses who take pride in their work. For the women and men we work with, it’s simply honest work - a way to produce quality goods without negatively impacting themselves or their local ecosystems.</p><p>The local team continues to expand their knowledge and operations, with the goal of passing on these sustainable cultural practices to future generations. Throughout the years, the IOAN network of dye houses has grown to four members, as demand for their work sustainably grows.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "content_icon_digijY",
+        "heading_aHKggw",
+        "text_yETyz6"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/IOAN-MAP-NATURAL-DYES1.jpg",
+        "height": "original",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "meta_text": "<p><strong>From the land to the finished product, all within a perfect environment, working to bring production back to the original makers.</strong></p><ul><li>Raw Material: India</li><li>Processing: India</li><li>Cut And Sew: India</li><li>Labels: India</li><li>Hang Tag: India</li><li>Packaging: India</li></ul>",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_banner_EYTm7m": {
@@ -341,6 +388,7 @@
     "image_with_text_VitQPR",
     "image_with_text_qKFkXM",
     "image_with_text_BiTYPk",
+    "image_with_text_CyiHaN",
     "image_banner_EYTm7m"
   ]
 }
